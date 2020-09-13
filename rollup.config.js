@@ -52,5 +52,7 @@ export default {
   // https://rollupjs.org/guide/en/#external
   external: Object.keys(pkg.devDependencies)
     .concat(builtin)
-    .filter((node_mod) => node_mod !== "fast-jwt"),
+    .filter(
+      (node_mod) => node_mod !== "fast-jwt" && node_mod !== "just-safe-set"
+    ),
 };
