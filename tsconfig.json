@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "declarationDir": "dist",
+    "declaration": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "typeRoots": ["node_modules/@types", "./types/"]
+  },
+  "include": ["./src/**/*", "./types/fast-jwt.d.ts"],
+  "exclude": ["node_modules", "dist", "__tests__"]
+}
