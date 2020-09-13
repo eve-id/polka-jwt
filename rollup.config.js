@@ -51,8 +51,6 @@ export default {
   // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
   // https://rollupjs.org/guide/en/#external
   external: Object.keys(pkg.devDependencies)
-    .concat(builtin)
-    .filter(
-      (node_mod) => node_mod !== "fast-jwt" && node_mod !== "just-safe-set"
-    ),
+    .concat(Object.keys(pkg.dependencies), builtin)
+    .filter((node_mod) => node_mod !== "just-safe-set"),
 };
